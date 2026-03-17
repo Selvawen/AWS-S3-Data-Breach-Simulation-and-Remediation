@@ -1,4 +1,4 @@
-# AWS S3 Data Breach Simulation & Remediation
+# 🔐 AWS S3 Data Breach Simulation & Remediation
 
 ## Overview
 This project simulates a real cloud security incident involving an exposed Amazon S3 bucket.
@@ -32,6 +32,7 @@ A publicly accessible S3 bucket was created by disabling block public access set
 ![Bucket Created](images/bucket-created.png)
 
 **Public bucket policy allowing unrestricted access**
+
 ![Bucket Policy](images/bucket-policy.png)
 
 ---
@@ -46,12 +47,15 @@ A sensitive file (`employee_data.csv`) was uploaded and made publicly accessible
 ![Upload](images/upload.png)
 
 **Object URL accessible publicly**
+
 ![URL](images/url.png)
 
 **File downloaded without authentication**
+
 ![Download](images/download.png)
 
 **Sensitive data exposed**
+
 ![Data](images/data.png)
 
 ---
@@ -63,12 +67,15 @@ AWS Config was configured with a managed rule to detect public S3 access.
 ### Evidence
 
 **Config rule created**
+
 ![Rule](images/config-rule.png)
 
 **Non-compliant resource detected**
+
 ![Noncompliant](images/noncompliant.png)
 
 **Compliance summary**
+
 ![Compliance](images/compliance.png)
 
 ---
@@ -83,12 +90,15 @@ The vulnerability was resolved by:
 ### Evidence
 
 **Public access blocked**
+
 ![Blocked](images/blocked.png)
 
 **Bucket policy removed**
+
 ![Policy Removed](images/policy-removed.png)
 
 **Encryption enabled**
+
 ![Encryption](images/encryption.png)
 
 ---
@@ -100,9 +110,11 @@ Access to the object was re-tested and successfully blocked.
 ### Evidence
 
 **Access denied after remediation**
+
 ![Denied](images/access-denied.png)
 
 **AWS Config now shows compliance**
+
 ![Compliant](images/compliant.png)
 
 ---
