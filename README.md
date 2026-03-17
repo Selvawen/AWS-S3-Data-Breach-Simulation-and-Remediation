@@ -1,7 +1,7 @@
 # AWS S3 Data Breach Simulation & Remediation
 
 ## Overview
-This project simulates a real-world cloud security incident involving an exposed Amazon S3 bucket.
+This project simulates a real cloud security incident involving an exposed Amazon S3 bucket.
 
 I intentionally misconfigured the bucket to allow public access, demonstrated how sensitive data could be accessed without authentication, and then used AWS security services to detect and remediate the issue.
 
